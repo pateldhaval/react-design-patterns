@@ -1,15 +1,10 @@
-import { useState } from 'react';
+import RenderProps from './components/render-props';
 
 function App() {
-	const [count, setCount] = useState(0);
-
-	const handleCount = () => {
-		setCount((count) => count + 1);
-	};
-
 	return (
 		<>
-			<button onClick={handleCount}>Count: {count}</button>
+			<h1>React Design Patterns</h1>
+			<RenderProps />
 		</>
 	);
 }
