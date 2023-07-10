@@ -8,13 +8,13 @@ import CountOnHover from './CountOnHover';
  */
 const RenderProps = () => {
 	return (
-		<>
+		<div>
 			<h2>Render Props</h2>
 			<div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
 				<Counter render={(count, increment) => <CountOnClick count={count} increment={increment} />} />
 				<Counter render={(count, increment) => <CountOnHover count={count} increment={increment} />} />
 			</div>
-		</>
+		</div>
 	);
 };
 
