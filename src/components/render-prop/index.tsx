@@ -11,7 +11,10 @@ const RenderProp = () => {
 		<div>
 			<h2>Render Props</h2>
 			<div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-				<Counter render={(count, increment) => <OnClickRenderPropDemo count={count} increment={increment} />} />
+				<Counter
+					initialCount={1}
+					render={(count, increment) => <OnClickRenderPropDemo count={count} increment={increment} />}
+				/>
 				<Counter render={(count, increment) => <OnHoverRenderPropDemo count={count} increment={increment} />} />
 			</div>
 		</div>

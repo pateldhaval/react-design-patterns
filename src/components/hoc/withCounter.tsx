@@ -6,10 +6,11 @@ export interface InjectedProps {
 }
 
 function withCounter<T extends InjectedProps>(
-	WrappedComponent: ComponentType<T>
+	WrappedComponent: ComponentType<T>,
+	initialCount = 0
 ): ComponentType<Omit<T, keyof InjectedProps>> {
 	const NewComponent = (hocProps: Omit<T, keyof InjectedProps>) => {
-		const [count, setCount] = useState(0);
+		const [count, setCount] = useState(initialCount);
 
 		const handleIncrement = () => {
 			setCount((count) => count + 1);

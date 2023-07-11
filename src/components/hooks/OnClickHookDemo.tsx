@@ -5,7 +5,7 @@ import useCounter from './useCounter';
  * Get count value and increment method from Custom Hook.
  */
 const OnClickHookDemo: React.FC = () => {
-	const { count, increment } = useCounter(1);
+	const { count, increment } = useCounter(3);
 
 	return (
 		<>

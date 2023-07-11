@@ -14,4 +14,4 @@ const OnClickHocDemo: React.FC<Props> = ({ count, increment }) => {
 	);
 };
 
-export default withCounter(OnClickHocDemo);
+export default withCounter(OnClickHocDemo, 2);
