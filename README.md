@@ -4,7 +4,7 @@
 
 ### Higher Order Components (HOC) - [Example Code](https://github.com/pateldhaval/react-design-patterns/tree/master/src/components/hoc)
 
-### Custom Hooks - Coming soon
+### Custom Hooks - [Example Code](https://github.com/pateldhaval/react-design-patterns/tree/master/src/components/hooks)
 
 ### Controlled (vs Uncontrolled) Components - Coming soon
 
