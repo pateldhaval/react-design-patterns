@@ -7,7 +7,7 @@ interface Props {
  * Display count value and increment on hover.
  * Get count value and increment method from outside as props.
  */
-const CountOnHover: React.FC<Props> = ({ count, increment }) => {
+const OnHoverRenderPropDemo: React.FC<Props> = ({ count, increment }) => {
 	return (
 		<>
 			<h3 onMouseOver={increment} style={{ margin: 0 }}>
@@ -17,4 +17,4 @@ const CountOnHover: React.FC<Props> = ({ count, increment }) => {
 	);
 };
 
-export default CountOnHover;
+export default OnHoverRenderPropDemo;

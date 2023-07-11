@@ -1,13 +1,13 @@
 import Hoc from './components/hoc';
 import Hooks from './components/hooks';
-import RenderProps from './components/render-props';
+import RenderProp from './components/render-prop';
 
 function App() {
 	return (
 		<>
 			<h1>React Design Patterns</h1>
 			<div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-				<RenderProps />
+				<RenderProp />
 				<Hoc />
 				<Hooks />
 			</div>

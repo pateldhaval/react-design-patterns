@@ -5,10 +5,10 @@ interface Props extends InjectedProps {
 }
 
 /**
- * Display count value and increment on click.
+ * Display count value and increment on hover.
  * Get count value and increment method as injected props from HOC.
  */
-const CountOnHover: React.FC<Props> = ({ count, increment, name }) => {
+const OnHoverHocDemo: React.FC<Props> = ({ count, increment, name }) => {
 	return (
 		<>
 			<h3 onMouseOver={increment} style={{ margin: 0 }}>
@@ -19,4 +19,4 @@ const CountOnHover: React.FC<Props> = ({ count, increment, name }) => {
 	);
 };
 
-export default withCounter(CountOnHover);
+export default withCounter(OnHoverHocDemo);

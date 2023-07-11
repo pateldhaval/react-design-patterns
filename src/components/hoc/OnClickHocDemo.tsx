@@ -6,7 +6,7 @@ interface Props extends InjectedProps {}
  * Display count value and increment on click.
  * Get count value and increment method as injected props from HOC.
  */
-const CountOnClick: React.FC<Props> = ({ count, increment }) => {
+const OnClickHocDemo: React.FC<Props> = ({ count, increment }) => {
 	return (
 		<div>
 			<button onClick={increment}>Click Count: {count}</button>
@@ -14,4 +14,4 @@ const CountOnClick: React.FC<Props> = ({ count, increment }) => {
 	);
 };
 
-export default withCounter(CountOnClick);
+export default withCounter(OnClickHocDemo);
